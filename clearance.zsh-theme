@@ -1,8 +1,8 @@
 # Clearance ZSH Theme
 
-# A minimalist oh-my-zsh theme with git, nix-shell and virtualenv prompt 
-# Based on 
-# * Avit theme (https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/avit.zsh-theme) 
+# A minimalist oh-my-zsh theme with git, nix-shell and virtualenv prompt
+# Based on
+# * Avit theme (https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/avit.zsh-theme)
 # * Clearance theme for Fish (https://github.com/oh-my-fish/theme-clearance)
 
 
@@ -54,11 +54,11 @@ function _make_prompt() {
     else
       local git_info="(%{$fg[green]%}$git_branch%{$reset_color%})"
     fi
-    echo -n " · $git_info" 
+    echo -n " · $git_info"
   fi
 
   if [[ -n "$IN_NIX_SHELL" ]]; then
-    echo -n " %{$fg[cyan]%}[nix-shell]%{$reset_color%}"
+    echo -n " %{$fg[cyan]%}[$name]%{$reset_color%}"
   fi
 
   echo ''
